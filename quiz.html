@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/quizsite.min.css" rel="stylesheet">
+    <link href="css/quizsite.css" rel="stylesheet">
 
   </head>
 
@@ -152,12 +152,7 @@
 
                 <div id="result_div" style="display:none;">
                 <img id="result_image" alt="">
-                <p id="result_text"></p>
-                <p>BBCode:<br>
-                <textarea rows="3" cols="30" id="result_bbcode"></textarea></p>
-
-                <p>HTML:<br>
-                <textarea rows="3" cols="30" id="result_html"></textarea></p>
+                <p id="result_text" style="font-size: 1.25rem; font-weight: 800;"></p>
                 </div>
                 </form>
                 <script type="text/javascript">
@@ -180,26 +175,26 @@
 
                     RESULTS["value1"] = {
                         name: "Aloy",
-                        image: "result_1.jpg",
-                        text: "You are Aloy, from the action RPG Horizon Zero Dawn. A true hero, you are kind-hearted and always tackle everything head-on. Very independent, you hate taking orders and have the skills and dedication to back it up."
+                        image: "result_1.png",
+                        text: "You are Aloy, from the action RPG Horizon Zero Dawn.<br><br>A true hero, you are kind-hearted and always tackle everything head-on. You work better on your own, since everyone else would just hold you back from your true potential."
                     };
 
                     RESULTS["value2"] = {
                         name: "Junkrat",
-                        image: "result_2.jpg",
-                        text: "You are Junkrat, from the first-person shooter Overwatch. You never take life seriously and when it comes to money, you are always looking to get rich quick. You'd rather go down in a blaze of glory."
+                        image: "result_2.png",
+                        text: "You are Junkrat, from the first-person shooter Overwatch.<br><br>You never take life seriously and when it comes to money, you are always looking to get rich quick. You'd rather go down in a blaze of glory."
                     };
 
                     RESULTS["value3"] = {
                         name: "Rico Rodriguez",
-                        image: "result_3.jpg",
-                        text: "You are Rico, from the third-person shooter series Just Cause. Your methods might be a little controversial, but you'd risk your life if it meant ensuring freedom for yourself and everyone else. Your bravery is off-the-charts, enough to make everyone else jealous."
+                        image: "result_3.png",
+                        text: "You are Rico, from the third-person shooter series Just Cause.<br><br>Your methods might be a little controversial, but you'd risk your life if it meant ensuring freedom for yourself and everyone else. Your bravery is off-the-charts, enough to make everyone else jealous."
                     };
 
                     RESULTS["value4"] = {
                         name: "Handsome Jack",
-                        image: "result_4.jpg",
-                        text: "You are Handsome Jack, from the first-person shooter series Borderlands. You might be friendly on the outside, but on the inside you're just plain ruthless. You believe in survival of the fittest, and anyone who doesn't live up to your high standards should get out of the way. Why bother being nice when you get ahead by being selfish?"
+                        image: "result_4.png",
+                        text: "You are Handsome Jack, from the first-person shooter series Borderlands.<br><br>You might be friendly on the outside, but on the inside you're just plain ruthless. You believe in survival of the fittest, and anyone who doesn't live up to your high standards should get out of the way. Why bother being nice when you get ahead by being selfish?"
                     };
 
                     /*************************************************************************
@@ -220,8 +215,6 @@
                     var result_div = document.getElementById("result_div");
                     var result_image = document.getElementById("result_image");
                     var result_text = document.getElementById("result_text");
-                    var result_bbcode = document.getElementById("result_bbcode");
-                    var result_html = document.getElementById("result_html");
 
                     // Validate the quiz form to prevent common issues
                     for (var i = 0; i < form_elements.length; i++) {
@@ -291,12 +284,6 @@
                         }
                         if (result_text && result.text) {
                             result_text.innerHTML = result.text;
-                        }
-                        if (result_bbcode) {
-                            result_bbcode.innerHTML = '[url=' + QUIZ_URL + '][img]' + RESULTS_FOLDER_URL + result.image + '[/img][/url]';
-                        }
-                        if (result_html) {
-                            result_html.innerHTML = '<a href="' + QUIZ_URL + '"><img src="' + RESULTS_FOLDER_URL + result.image + '" alt="' + result.name + '" title="' + result.text + '"></a>';
                         }
                         result_div.style.display = 'block';
                         return false;
