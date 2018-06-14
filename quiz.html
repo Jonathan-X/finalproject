@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Personality Quiz Site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/quizsite.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">Personality Quiz</span>
+      <span class="site-heading-lower">A Fun Website</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="quiz.html">Quiz 1</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section about-heading">
+      <div class="container">
+        <!--<img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">-->
+        <br>
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Personality Test</span>
+                  <span class="section-heading-lower">What game character are you?</span>
+                </h2>
+                <p>Take our fun personality test to find out what game character you identify with the most from classic games of the last decade.</p>
+                <p class="mb-0">You might even find a new favorite game.</p>
+                <br>
+                <!-- Characters: Handsome Jack, Aloy, Rico Rodriguez, Junkrat-->
+                <form name="quizform">
+                <h4>You're walking down the street and someone in front of you drops $5. You...</h4>
+                <ul>
+                <li><label><input type="radio" name="q1" value="value1" checked> Give it back to them</label></li> <!--Aloy-->
+                <li><label><input type="radio" name="q1" value="value2"> Take it and put it in your wallet</label></li> <!--Junkrat-->
+                <li><label><input type="radio" name="q1" value="value3"> Take it and give it to a panhandler</label></li> <!--Rico-->
+                <li><label><input type="radio" name="q1" value="value4"> Ignore it, it's too little to bother with</label></li> <!--Handsome Jack-->
+                </ul>
+
+                <h4>There's a deadline approaching soon. You...</h4>
+                <ul>
+                <li><label><input type="radio" name="q2" value="value1" checked> Start working right away to show the naysayers</label></li> <!--Aloy-->
+                <li><label><input type="radio" name="q2" value="value2"> Rush the work the night before, minimum effort for maximum reward</label></li> <!--Junkrat-->
+                <li><label><input type="radio" name="q2" value="value3"> Claim your computer exploded and you couldn't do it</label></li> <!--Rico-->
+                <li><label><input type="radio" name="q2" value="value4"> Pay your subordinate to do it instead</label></li> <!--Handsome Jack-->
+                </ul>
+
+                <h4>If you worked in a boring office job, you'd be...</h4>
+                <ul>
+                <li><label><input type="radio" name="q3" value="value4" checked> Asking for a promotion to CEO for your hard work</label></li> <!--Handsome Jack-->
+                <li><label><input type="radio" name="q3" value="value3"> Getting fired for talking back to your terrible boss</label></li> <!--Rico-->
+                <li><label><input type="radio" name="q3" value="value1"> Preparing your letter of resignation to create your own business</label></li> <!--Aloy-->
+                <li><label><input type="radio" name="q3" value="value2"> Embezzling money from the company's accounts</label></li> <!--Junkrat-->
+                </ul>
+
+                <h4>For Halloween, your costume is...</h4>
+                <ul>
+                <li><label><input type="radio" name="q4" value="value2" checked> Something cheap, all I care about is partying</label></li>
+                <li><label><input type="radio" name="q4" value="value3"> Something from a military surplus store</label></li>
+                <li><label><input type="radio" name="q4" value="value1"> Something you made entirely by hand</label></li>
+                <li><label><input type="radio" name="q4" value="value4"> Something pricey, and more importantly, cool-looking</label></li>
+                </ul>
+
+                <h4>When you JUST miss your bus, you...</h4>
+                <ul>
+                <li><label><input type="radio" name="q5" value="value4" checked> Don't care, since you just call an Uber instead</label></li>
+                <li><label><input type="radio" name="q5" value="value3"> Grab onto the back of the bus and ride it despite the danger</label></li>
+                <li><label><input type="radio" name="q5" value="value2"> Call your best friend to pick you up</label></li>
+                <li><label><input type="radio" name="q5" value="value1"> Run to your destination and get there faster</label></li>
+                </ul>
+
+                <h4>If you have kids, you would be...</h4>
+                <ul>
+                <li><label><input type="radio" name="q6" value="value1" checked> A great role model to them, teaching them everything you know</label></li>
+                <li><label><input type="radio" name="q6" value="value2"> Letting them do whatever they wanted</label></li>
+                <li><label><input type="radio" name="q6" value="value4"> Ruthlessly forcing them to make you money</label></li>
+                <li><label><input type="radio" name="q6" value="value3"> Always out on business trips</label></li>
+                </ul>
+
+                <h4>Your perfect apartment would have...</h4>
+                <ul>
+                <li><label><input type="radio" name="q7" value="value4" checked> An absolutely incredible view from the window</label></li>
+                <li><label><input type="radio" name="q7" value="value3"> Armor plating, in case my enemies come knocking</label></li>
+                <li><label><input type="radio" name="q7" value="value2"> Lots of stuff lying around, beauty is in the eye of the beholder</label></li>
+                <li><label><input type="radio" name="q7" value="value1"> Apartment? I'd rather sleep outside</label></li>
+                </ul>
+
+                <h4>If aliens invaded, you would rather...</h4>
+                <ul>
+                <li><label><input type="radio" name="q8" value="value1" checked> Infiltrate their ship and strike from the shadows</label></li>
+                <li><label><input type="radio" name="q8" value="value3"> Rally a resistance to stop them... using a lot of explosives</label></li>
+                <li><label><input type="radio" name="q8" value="value2"> Take advantage of the chaos to do whatever you want</label></li>
+                <li><label><input type="radio" name="q8" value="value4"> Bend them to your will and take over the world yourself</label></li>
+                </ul>
+
+                <h4>If you got to instantly master any discipline, it would be...</h4>
+                <ul>
+                <li><label><input type="radio" name="q9" value="value3" checked> Skydiving, just in case my plane was going down</label></li>
+                <li><label><input type="radio" name="q9" value="value2"> Safecracking, no security would phase me</label></li>
+                <li><label><input type="radio" name="q9" value="value4"> Programming, and purchase a robot or two with my sizable salary</label></li>
+                <li><label><input type="radio" name="q9" value="value1"> Survival skills, if something terrible happens, I'll be ready</label></li>
+                </ul>
+
+                <h4>My circle of friends is...</h4>
+                <ul>
+                <li><label><input type="radio" name="q10" value="value1" checked> A few, but we watch each others' backs</label></li>
+                <li><label><input type="radio" name="q10" value="value3"> Massive, I'm kind of an underground celebrity</label></li>
+                <li><label><input type="radio" name="q10" value="value4"> None, who cares about friends when you can have me-time</label></li>
+                <li><label><input type="radio" name="q10" value="value2"> One, with a friend like this, who needs any more?</label></li>
+                </ul>
+
+                <p><button type="submit">Finish quiz</button></p>
+
+                <div id="result_div" style="display:none;">
+                <img id="result_image" alt="">
+                <p id="result_text"></p>
+                <p>BBCode:<br>
+                <textarea rows="3" cols="30" id="result_bbcode"></textarea></p>
+
+                <p>HTML:<br>
+                <textarea rows="3" cols="30" id="result_html"></textarea></p>
+                </div>
+                </form>
+                <script type="text/javascript">
+                (function() {
+                    /*************************************************************************
+                    This should be the full address to your quiz, in order for the result
+                    codes to link to it.
+
+                    *************************************************************************/
+                    var QUIZ_URL = "http://www.example.com/a_quiz.html";
+
+                    /*************************************************************************
+                    This should be the full address to whatever folder on your website
+                    directly contains your result images, ending in a forward slash.
+
+                    *************************************************************************/
+                    var RESULTS_FOLDER_URL = "img/";
+
+                    var RESULTS = {};
+
+                    RESULTS["value1"] = {
+                        name: "Aloy",
+                        image: "result_1.jpg",
+                        text: "You are Aloy, from the action RPG Horizon Zero Dawn. A true hero, you are kind-hearted and always tackle everything head-on. Very independent, you hate taking orders and have the skills and dedication to back it up."
+                    };
+
+                    RESULTS["value2"] = {
+                        name: "Junkrat",
+                        image: "result_2.jpg",
+                        text: "You are Junkrat, from the first-person shooter Overwatch. You never take life seriously and when it comes to money, you are always looking to get rich quick. You'd rather go down in a blaze of glory."
+                    };
+
+                    RESULTS["value3"] = {
+                        name: "Rico Rodriguez",
+                        image: "result_3.jpg",
+                        text: "You are Rico, from the third-person shooter series Just Cause. Your methods might be a little controversial, but you'd risk your life if it meant ensuring freedom for yourself and everyone else. Your bravery is off-the-charts, enough to make everyone else jealous."
+                    };
+
+                    RESULTS["value4"] = {
+                        name: "Handsome Jack",
+                        image: "result_4.jpg",
+                        text: "You are Handsome Jack, from the first-person shooter series Borderlands. You might be friendly on the outside, but on the inside you're just plain ruthless. You believe in survival of the fittest, and anyone who doesn't live up to your high standards should get out of the way. Why bother being nice when you get ahead by being selfish?"
+                    };
+
+                    /*************************************************************************
+                    If for some reason you need to give your form a different name attribute
+                    than "quizform", enter it here. Otherwise, leave this alone.
+
+                    *************************************************************************/
+                    var FORM_NAME = 'quizform';
+
+                    /*************************************************************************
+                    DO NOT EDIT ANYTHING BELOW THIS POINT
+
+                    *************************************************************************/
+
+                    var form = document.forms[FORM_NAME];
+                    var form_elements = document.forms[FORM_NAME].elements;
+                    var form_element;
+                    var result_div = document.getElementById("result_div");
+                    var result_image = document.getElementById("result_image");
+                    var result_text = document.getElementById("result_text");
+                    var result_bbcode = document.getElementById("result_bbcode");
+                    var result_html = document.getElementById("result_html");
+
+                    // Validate the quiz form to prevent common issues
+                    for (var i = 0; i < form_elements.length; i++) {
+                        form_element = form_elements[i];
+                        if (form_element.type === "radio") {
+                            if (form_element.value.indexOf('&') !== -1) {
+                                alert("Your quiz form has an answer with an ampersand in the value (" + form_element.value + "). This will cause problems. Please change this value.");
+                            }
+                            else if (!(form_element.value in RESULTS)) {
+                                alert("Your quiz form has an answer with the value " + form_element.value + " but there is no result corresponding to this value. You have probably made a typo somewhere.");
+                            }
+                        }
+                    }
+
+                    form.onsubmit = function() {
+                        var answers = {};
+                        var results = [];
+                        var joined_results;
+                        var result;
+                        var form_element;
+
+                        for (var value in RESULTS) {
+                            if (value.indexOf('&') === -1) {
+                                // Not a joint result
+                                answers[value] = 0;
+                            }
+                        }
+
+                        for (var i = 0; i < form_elements.length; i++) {
+                            form_element = form_elements[i];
+                            if ((form_element.type === "radio" || form_element.type === "checkbox") && form_element.checked) {
+                                answers[form_element.value]++;
+                            }
+                        }
+
+                        for (var value in answers) {
+                            if (results.length === 0 || answers[value] > answers[results[0]]) {
+                                results = [value];
+                            }
+                            else if (answers[value] === answers[results[0]]) {
+                                results.push(value);
+                            }
+                        }
+
+                        while (results.length > 0) {
+                            joined_results = results.join('&');
+                            if (joined_results in RESULTS) {
+                                result = RESULTS[joined_results];
+                                break;
+                            }
+                            else {
+                                // No joint result - remove the last element and see if
+                                // there's a result for that.
+                                results.pop();
+                            }
+                        }
+
+                        if (result.link) {
+                            window.location = result.link;
+                            return false;
+                        }
+
+                        if (result_image) {
+                            result_image.src = RESULTS_FOLDER_URL + result.image;
+                            result_image.setAttribute('alt', result.name);
+                            if (result.text) result_image.title = result.text;
+                        }
+                        if (result_text && result.text) {
+                            result_text.innerHTML = result.text;
+                        }
+                        if (result_bbcode) {
+                            result_bbcode.innerHTML = '[url=' + QUIZ_URL + '][img]' + RESULTS_FOLDER_URL + result.image + '[/img][/url]';
+                        }
+                        if (result_html) {
+                            result_html.innerHTML = '<a href="' + QUIZ_URL + '"><img src="' + RESULTS_FOLDER_URL + result.image + '" alt="' + result.name + '" title="' + result.text + '"></a>';
+                        }
+                        result_div.style.display = 'block';
+                        return false;
+                    };
+                })();
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Jonathan Xikis 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
